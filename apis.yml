@@ -1,23 +1,79 @@
 aid: biddingx
+
 name: Biddingx
-description: 'Biddingx is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'BiddingX is China’s award‑winning and advanced marketing technology platform with a performance‑driven AI algorithm. It empowers global marketers to effectively advertise in China, handling 50 billion bid requests per day and reaching 99 % of Chinese netizens, with 1 billion unique users.'
+
 url: https://raw.githubusercontent.com/api-evangelist/biddingx/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-28'
+
 modified: '2026-09-28'
+
 tags:
 - Company
-apis: []
+- Marketing
+- Programmatic
+- DSP
+- AI
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/biddingx-hosts.yml
+- type: Newsroom
+  url: https://www.biddingx.com/news
+- type: Leadership
+  url: https://www.biddingx.com/introduction/team
+- type: DomainSecurity
+  url: security/biddingx-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/biddingx
+  url: https://www.biddingx.com
+- type: Documentation
+  url: https://www.biddingx.com/en/about
+- type: APIReference
+  url: https://www.biddingx.com/en/platform
+- type: GettingStarted
+  url: https://www.biddingx.com/en/services
+- type: Support
+  url: https://www.biddingx.com/en/contact_us
+- type: TermsOfService
+  url: https://www.biddingx.com/en/terms_of_use
+- type: PrivacyPolicy
+  url: https://www.biddingx.com/en/data_protection_policy
+- type: LinkedIn
+  url: https://www.linkedin.com/company/biddingx
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  method: derived
+  generated: '2026-09-28'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes developer documentation but serves no machine-readable contract from it
+  evidence:
+  - url: https://equityzen.com/company/biddingx
+    status: 403
+x-enrichment:
+  date: '2026-09-28'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
